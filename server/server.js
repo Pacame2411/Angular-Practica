@@ -1,7 +1,8 @@
 const express = require('express');
-app.use(express.static('public'));
-const app = express();
+const app = express(); // Primero inicializas app
 const port = 3000;
+
+app.use(express.static('public')); // Luego usas app
 
 app.get('/', (req, res) => res.send('Hola Mundo!'));
 
